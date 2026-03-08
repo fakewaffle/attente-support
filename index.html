@@ -145,14 +145,14 @@
     <h3>iCloud Sync (CloudKit)</h3>
     <p>Event data syncs via Apple's CloudKit to your own iCloud account. This data is stored and managed by Apple under their <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">iCloud privacy policy</a>. No event data is sent to the developer's servers.</p>
 
-    <h3>Crash Reporting (Sentry)</h3>
-    <p>Attente uses <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> for crash reports and performance monitoring. This may include:</p>
+    <h3>Diagnostics (Sentry)</h3>
+    <p>Attente uses <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> to collect diagnostic data for analytics purposes — specifically to monitor app stability and improve performance. The following data types may be collected:</p>
     <ul>
-      <li>Device information (model, OS version)</li>
-      <li>Crash stack traces</li>
-      <li>App performance data</li>
+      <li><strong>Crash Data</strong> — crash logs and stack traces</li>
+      <li><strong>Performance Data</strong> — app launch times, response times, and resource usage</li>
+      <li><strong>Other Diagnostic Data</strong> — device model, OS version, and app state information</li>
     </ul>
-    <p>No personally identifiable information is intentionally collected through Sentry. You can review <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry's privacy policy</a> for more details.</p>
+    <p>This data is used for analytics only and is <strong>not linked to your identity</strong>. No personally identifiable information is intentionally collected. See <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry's privacy policy</a> for more details.</p>
 
     <h3>Calendar Access (EventKit)</h3>
     <p>With your permission, Attente can import events from your device calendar. Calendar data stays on-device and in your iCloud account. It is not sent to any external server.</p>
