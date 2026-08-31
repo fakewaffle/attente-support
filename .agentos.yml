@@ -1,0 +1,15 @@
+version: 1
+codeReview:
+  routes:
+    - pattern: "**/*.html"
+      reviewers: [review-frontend, review-security]
+    - pattern: "**/*.css"
+      reviewers: [review-frontend]
+    - pattern: "**/*.js"
+      reviewers: [review-frontend, review-security]
+    - pattern: "CNAME"
+      reviewers: [review-infrastructure, review-security]
+    - pattern: ".github/workflows/**"
+      reviewers: [review-infrastructure, review-security]
+  alwaysReview:
+    - review-frontend
